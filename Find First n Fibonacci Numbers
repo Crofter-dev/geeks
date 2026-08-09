@@ -1,0 +1,9 @@
+class Solution:
+    def fibionachi(self, n:int):
+        l = [0,1]
+        a = 0
+        while a <= n:
+            s = l[-1]+l[-2]
+            l.append(s)
+            a += 1
+        return l
