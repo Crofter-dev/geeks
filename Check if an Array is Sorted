@@ -1,0 +1,6 @@
+class Solution:
+    def sorted(self, arr:list):
+        is_sorted = (arr == sorted(arr))
+        if is_sorted == True:
+            return True
+        return False
