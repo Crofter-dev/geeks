@@ -1,0 +1,7 @@
+class Solution:
+    def sentencepallindrome(self, s:str):
+        a = "".join(char.lower() for char in s if char.isalpha())
+        c = a == a[::-1]
+        if c == True:
+            return True
+        return False
