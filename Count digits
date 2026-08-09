@@ -1,0 +1,4 @@
+class Solution:
+    def sorted(self, n):
+        n = str(n)
+        return sum(1 for char in n if char.isdigit())
