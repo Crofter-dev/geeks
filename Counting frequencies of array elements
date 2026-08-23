@@ -1,0 +1,5 @@
+class Solution:
+    def frequencies_of_array_elements(self, arr:list[int]):
+        from collections import Counter
+        counts = [[item, count] for item, count in Counter(arr).items()]
+        return list(counts)
