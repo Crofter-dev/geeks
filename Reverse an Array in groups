@@ -1,0 +1,4 @@
+class Solution:
+    def reversearrayingroup(self, arr:list[int], k:int):
+        arr = arr[:k][::-1] + arr[k:k+k][::-1] + arr[k+k:][::-1]
+        return arr
