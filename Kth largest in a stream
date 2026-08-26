@@ -1,0 +1,15 @@
+class Solution: 
+    def kth_largest_sorting(arr: list[int], k: int) -> list[int]:
+        stream = []
+        result = []
+
+        for num in arr:
+            stream.append(num)
+
+            if len(stream) < k:
+                result.append(-1)
+            else:
+                stream.sort()
+                result.append(stream[-k])
+
+        return result
