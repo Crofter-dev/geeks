@@ -1,0 +1,11 @@
+class Solution:
+  def stock(self, prices:list[int]):
+    current = 0
+    profit = 0
+
+    for i in range(o,len(prices):
+      change = prices[i] - prices[i-1]
+      current = max(0, current+change)
+      profit = max(profit, current)
+    
+    return profit
